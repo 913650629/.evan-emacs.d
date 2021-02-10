@@ -1,0 +1,5 @@
+;; (load-file "~/.emacs.d/themes/oswald-theme.el")
+;; (load-file "~/.emacs.d/themes/solo-jazz-theme.el")
+;; (load-theme 'oswald t)
+;; (load-theme 'doom-gruvbox-light)
+(provide 'private-ui)
