@@ -5,15 +5,16 @@
  ;; evan/en-font-style "r"
  ;; evan/en-font-size 22
  
- evan/en-font-name "Fira Code Nerd Font"
- evan/en-font-style "Regular"
- evan/en-font-size 18
- evan/zh-font-size 18
+ ;; evan/en-font-name "Fira Code Nerd Font"
+ ;; evan/en-font-style "Regular"
+ ;; evan/en-font-size 20
+ ;; evan/zh-font-size 20
  browse-url-browser-function 'eaf-open-browser
  is-need-meow-module t
  split-width-threshold nil)
 
-(setq circadian-themes '((:sunrise . doom-one-light)
-                         (:sunset . doom-one)))
+(setq circadian-themes '((:sunrise . doom-tomorrow-day)
+                         (:sunset . doom-tomorrow-night)))
+(circadian-setup)
 (message "private-variable loaded.....")
 (provide 'private-variable)

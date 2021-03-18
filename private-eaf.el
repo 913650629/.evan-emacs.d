@@ -3,23 +3,23 @@
   :load-path "~/.emacs.d/site-lisp/emacs-application-framework"
   :init
   (use-package epc
-    :defer t)
+    :defer t
+    :ensure t)
   (use-package ctable
     :quelpa ((ctable :fetcher github :repo "kiwanami/emacs-ctable"))
     :defer t)
   (use-package deferred
     :quelpa ((deferred :fetcher github :repo "kiwanami/emacs-deferred"))
     :defer t)
+  (use-package s
+    :defer t
+    :ensure t)
   :custom
   (eaf-find-alternate-file-in-dired t)
   (eaf-proxy-type "socks5")
   (eaf-proxy-host evan/proxy-host)
   (eaf-proxy-port evan/proxy-port)
   :config
-  ;; eaf markdown 预览所需要的
-  (use-package grip-mode
-	:ensure t
-	:after eaf)
   (defalias 'browse-web #'eaf-open-browser)
   (setq eaf-grip-token evan/eaf-grip-token)
   ;; (setq eaf-browser-default-search-engine "google")
@@ -30,6 +30,8 @@
   (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding) 
   (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding) 
   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
+  (eaf-bind-key nil "x" eaf-browser-keybinding)
+  (eaf-bind-key eaf-proxy-insert_or_close_buffer "C-S-x" eaf-browser-keybinding)
   ;; 将光标自动移动到右下角（防止eaf buffer无法使用emacs快捷键)
   (if (and
 	   (> (car (circadian-now-time)) (car (circadian-sunrise)))
