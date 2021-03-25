@@ -271,7 +271,6 @@
   :ensure t
   :config
   (setq httpd-root "~/Documents/site/public"))
-
 (defun preview-current-buffer-in-browser ()
   "Open current buffer as html."
   (interactive)

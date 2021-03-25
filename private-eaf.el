@@ -32,6 +32,12 @@
   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
   (eaf-bind-key nil "x" eaf-browser-keybinding)
   (eaf-bind-key eaf-proxy-insert_or_close_buffer "C-S-x" eaf-browser-keybinding)
+  ;; 将eaf 浏览器原本的SPC键命令取消
+  ;; (eaf-bind-key nil "SPC" eaf-browser-keybinding)
+  ;; 将EAF浏览器中的SPC绑定为meow-leader-keymap
+  ;; (eaf-bind-key meow-leader-keymap "SPC" eaf-browser-keybinding)
+  ;; (eaf-bind-key nil "SPC" eaf-pdf-viewer-keybinding)
+  ;; (eaf-bind-key meow-leader-keymap "SPC" eaf-pdf-viewer-keybinding)
   ;; 将光标自动移动到右下角（防止eaf buffer无法使用emacs快捷键)
   (if (and
 	   (> (car (circadian-now-time)) (car (circadian-sunrise)))
@@ -46,9 +52,9 @@
 	  (eaf-setq eaf-mindmap-dark-mode "true")))
   (setq mouse-avoidance-banish-position '((frame-or-window . frame)
 	    								  (side . right)
-	    								  (side-pos . 80)
+	    								  (side-pos . 40)
 	    								  (top-or-bottom . bottom)
-	    								  (top-or-bottom-pos . 0)))
+	    								  (top-or-bottom-pos . 40)))
   (mouse-avoidance-mode 'banish))
 
 (provide 'private-eaf)

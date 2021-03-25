@@ -11,10 +11,12 @@
  ;; evan/zh-font-size 20
  browse-url-browser-function 'eaf-open-browser
  is-need-meow-module t
+ is-need-awesome-tray t
+ awesome-tray-refresh-idle-delay 0.1
  split-width-threshold nil)
 
-(setq circadian-themes '((:sunrise . doom-tomorrow-day)
-                         (:sunset . doom-tomorrow-night)))
+(setq circadian-themes '((:sunrise . lazycat-light)
+                         (:sunset . lazycat-dark)))
 (circadian-setup)
-(message "private-variable loaded.....")
+
 (provide 'private-variable)

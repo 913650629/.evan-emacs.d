@@ -10,6 +10,9 @@
 ;; (require 'private-racket)
 (require 'private-reader)
 (require 'private-eaf)
+(require 'private-eglot)
+(require 'private-org)
+(require 'private-meow)
 
 ;; 不要删除下面这行
 (provide 'private-module)
