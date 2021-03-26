@@ -13,6 +13,7 @@
 (require 'private-eglot)
 (require 'private-org)
 (require 'private-meow)
+(require 'private-awesome-tray)
 
 ;; 不要删除下面这行
 (provide 'private-module)
