@@ -1,9 +1,9 @@
 (setq
  evan/eaf-grip-token "32872f2ccde165e5d36548619681c7b7e7ec8793"
  ;; 英文字体
- ;; evan/en-font-name "agave Nerd Font"
- ;; evan/en-font-style "r"
- ;; evan/en-font-size 22
+ evan/en-font-name "agave Nerd Font"
+ evan/en-font-style "r"
+ evan/en-font-size 22
  
  ;; evan/en-font-name "Fira Code Nerd Font"
  ;; evan/en-font-style "Regular"
@@ -12,6 +12,7 @@
  browse-url-browser-function 'eaf-open-browser
  is-need-meow-module t
  is-need-awesome-tray t
+ is-need-awesome-tab t
  awesome-tray-refresh-idle-delay 0.1
  split-width-threshold nil)
 

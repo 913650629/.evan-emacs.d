@@ -52,9 +52,9 @@
 	  (eaf-setq eaf-mindmap-dark-mode "true")))
   (setq mouse-avoidance-banish-position '((frame-or-window . frame)
 	    								  (side . right)
-	    								  (side-pos . 40)
+	    								  (side-pos . 100)
 	    								  (top-or-bottom . bottom)
-	    								  (top-or-bottom-pos . 40)))
+	    								  (top-or-bottom-pos . -100)))
   (mouse-avoidance-mode 'banish))
 
 (provide 'private-eaf)

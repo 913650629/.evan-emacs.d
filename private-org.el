@@ -3,6 +3,7 @@
 
 
 (use-package org-html-themify
+  :disabled
   :quelpa (org-html-themify
            :fetcher github
            :repo "DogLooksGood/org-html-themify"
@@ -14,6 +15,7 @@
      (light . doom-tomorrow-day))))
 
 (use-package hexrgb
+  :disabled
   :quelpa ((hexrgb
            :fetcher github
            :repo "emacsmirror/hexrgb")))
