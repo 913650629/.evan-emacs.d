@@ -1,7 +1,7 @@
-(push "~/Documents/org/capture/study.org" org-agenda-files)
-(push "~/Documents/org/capture/code.org" org-agenda-files)
-
-
+(push "~/Documents/org/book.org" org-agenda-files)
+(push "~/Documents/org/study.org" org-agenda-files)
+(push "~/Documents/org/exam.org" org-agenda-files)
+(push "~/Documents/org/day.org" org-agenda-files)
 (use-package org-html-themify
   :disabled
   :quelpa (org-html-themify
