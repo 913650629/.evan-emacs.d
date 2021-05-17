@@ -18,6 +18,6 @@
 
 (setq circadian-themes '((:sunrise . lazycat-light)
                          (:sunset . lazycat-dark)))
-(circadian-setup)
+;;(circadian-setup)
 
 (provide 'private-variable)
