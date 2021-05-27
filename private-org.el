@@ -1,4 +1,3 @@
-(push "~/Documents/org/book.org" org-agenda-files)
 (push "~/Documents/org/study.org" org-agenda-files)
 (push "~/Documents/org/exam.org" org-agenda-files)
 (push "~/Documents/org/day.org" org-agenda-files)
