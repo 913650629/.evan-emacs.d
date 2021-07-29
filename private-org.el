@@ -18,6 +18,7 @@
            :fetcher github
            :repo "emacsmirror/hexrgb")))
 
+;;高亮
 (defface hi-red-b '((t (:foreground "#e50062"))) t)
 
 (defun org-bold-highlight ()
@@ -26,5 +27,7 @@
   (highlight-regexp "[ \\t]\\(\\*\\(\\S-[^*]+\\S-\\|[^*]\\{1,2\\}\\)\\*\\)[ \\t\\n]*" 'hi-red-b))
 
 (add-hook 'org-mode-hook 'org-bold-highlight)
+;;自动换行
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 
 (provide 'private-org)
