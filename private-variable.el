@@ -16,8 +16,8 @@
  awesome-tray-refresh-idle-delay 0.1
  split-width-threshold nil)
 
-(setq circadian-themes '((:sunrise . lazycat-light)
-                         (:sunset . lazycat-dark)))
+(setq circadian-themes '((:sunrise . kaolin-mono-light)
+                         (:sunset . kaolin-mono-dark)))
 ;;(circadian-setup)
 
 (provide 'private-variable)
